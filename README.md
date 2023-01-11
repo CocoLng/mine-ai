@@ -10,10 +10,10 @@ This project is about implementing an **AI** whith Q-Learning tables in **Minecr
 </p>
 
 ## Milestones
-The project is divided in 3 milestones :
- - **1** How to get the data from the game
- - **2** How to implement the AI with basic rules set
- - **3** How to implement the AI with Q-Learning tables
+The project is divided in 3 milestones : 
+- **1** How to get the data from the game
+- **2** How to implement the AI with basic rules set
+- **3** How to implement the AI with Q-Learning tables
 
 ## Current Features
 
