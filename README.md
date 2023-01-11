@@ -6,7 +6,7 @@ This project is about implementing an **AI** whith Q-Learning tables in **Minecr
 <p align="center">
 <img src="https://github.com/CocoLng/mine-ai/actions/workflows/linter.yml/badge.svg" alt="Lint Code" />
 <img src="https://github.com/CocoLng/mine-ai/actions/workflows/github-code-scanning/codeql/badge.svg" alt="CodeQL">
-<a href="https://github.com/CocoLng/mine-ai/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/CocoLng/mine-ai"></a>
+<a href="https://github.com/CocoLng/mine-ai/blob/main/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/CocoLng/mine-ai"></a>
 </p>
 
 ## Milestones
