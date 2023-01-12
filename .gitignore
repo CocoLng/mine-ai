@@ -296,7 +296,6 @@ server/world_nether
 server/world_the_end
 server/*.json
 server/*.log
-server/server.properties
-server/server.properties.bak
-*.properties
+server/*
+!server/server.properties
 server/server.properties
