@@ -1,3 +1,26 @@
+####################################################
+# cd .\server\
+# java -jar .\spigot-1.19.3.jar
+####################################################
+
+
+from time import sleep
+
+from mcpi.minecraft import Minecraft
+
+mc = Minecraft.create(address="localhost", port=4711)
+
+# Constantly grab the player's position and create
+# a new stone block underneath him/her
+while True:
+    x, y, z = mc.player.getPos()
+    
+    # Debug
+    print("x: {}, y: {}, z: {}".format(x, y, z))
+    
+    mc.setBlock(x, y - 1, z, 1)
+    sleep(0.1)
+
 # The project is divided in 3 parts :
 # 1. How to get the data from the game
 # 2. How to implement the AI with basic rules set
