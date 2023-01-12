@@ -289,4 +289,9 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
-server/
+server/bundler
+server/logs
+server/world
+server/world_nether
+server/world_the_end
+server/*.json
