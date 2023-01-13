@@ -5,6 +5,7 @@ from javascript import require
 
 load_dotenv()
 
+
 mineflayer = require('mineflayer')
 bot_username = 'MineAI'
 
@@ -37,4 +38,3 @@ class Bot:
     #     bot.chat(f"Someone joined! It's {player.username}")
     #
     # @On('playerLeft')
-    
