@@ -3,12 +3,15 @@
 # java -jar .\spigot-1.19.3.jar
 ####################################################
 
-
+import os
 from time import sleep
 
+from dotenv import load_dotenv
 from mcpi.minecraft import Minecraft
 
-mc = Minecraft.create(address="localhost", port=4711)
+load_dotenv()
+
+mc = Minecraft.create(address=os.getenv('IP'), port=4711)
 
 # Constantly grab the player's position and create
 # a new stone block underneath him/her

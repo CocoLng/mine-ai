@@ -254,7 +254,7 @@ celerybeat.pid
 .venv
 env/
 venv/
-ENV/
+ENV/    # this is a common virtualenv directory name
 env.bak/
 venv.bak/
 
@@ -289,6 +289,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
+server/
 server/bundler
 server/logs
 server/world
@@ -296,6 +297,5 @@ server/world_nether
 server/world_the_end
 server/*.json
 server/*.log
-server/*
-!server/server.properties
-server/server.properties
+
+/node_modules/
