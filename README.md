@@ -10,7 +10,7 @@ This project is about implementing an **AI** with Q-Learning tables in **Minecra
 </p>
 
 ## Milestones
-The project is divided in 3 milestones : 
+The project is divided in 3 milestones :
 - **1** How to get the data from the game
 - **2** How to implement the AI with basic rules set
 - **3** How to implement the AI with Q-Learning tables
@@ -56,5 +56,3 @@ This project is made by non english students during their spare time, beware of 
 
 - [@CocoLng](https://github.com/CocoLng)
 - [@strculande](https://github.com/strculande)
-
-

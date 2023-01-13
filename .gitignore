@@ -290,4 +290,6 @@ cython_debug/
 .idea/
 
 server/
+server\**
 /node_modules/
+.pre-commit-config.yaml
