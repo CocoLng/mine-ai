@@ -3,23 +3,55 @@
 # java -jar .\spigot-1.19.3.jar
 ####################################################
 
-
-from time import sleep
+from sys import exit
 
 from mcpi.minecraft import Minecraft
 
-mc = Minecraft.create(address="localhost", port=4711)
+from bot import InitialiseBot
 
-# Constantly grab the player's position and create
-# a new stone block underneath him/her
+mc = Minecraft.create(address="localhost", port=4711)
+bot = []
+
+players_ids = mc.getPlayerEntityIds()
+print(len(players_ids), " entities available.")
+number = len(players_ids)
+mc.postToChat("%s entities available." % number)
+# mc.postToChat("stop")
+for id_p in players_ids:
+    mc.postToChat("Entity player nb : %s" % id_p)
+
 while True:
-    x, y, z = mc.player.getPos()
-    
-    # Debug
-    print("x: {}, y: {}, z: {}".format(x, y, z))
-    
-    mc.setBlock(x, y - 1, z, 1)
-    sleep(0.1)
+    # players_ids = mc.getPlayerEntityIds()
+    # if len(players_ids) > number:
+    #     bot.append(Bot())
+    #     bot[len(bot)-1].connect_bot()
+    #     number = len(players_ids)
+    #     mc.postToChat("Bot connected")
+    # elif len(players_ids) < number:
+    #     bot[len(bot)-1].disconnect_bot()
+    #     bot.pop()
+    #     number = len(players_ids)
+    #     mc.postToChat("Bot disconnected")
+    # else:
+    #     pass
+    for post in mc.events.pollChatPosts():
+        
+        if post.message == "connect":
+            print("Connection...")
+            botAI = InitialiseBot()
+            
+        if post.message == "stop" and botAI != []:
+            print("Stopping...")
+            botAI.disconnect()
+            
+        if post.message == "kill":
+            print("Killing...")
+            exit()
+        elif botAI == []:
+            print("No bot connected")
+        else:
+            pass
+            #botAI.chat('pas compris')
 
 # The project is divided in 3 parts :
 # 1. How to get the data from the game
