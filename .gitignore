@@ -298,4 +298,6 @@ server/world_the_end
 server/*.json
 server/*.log
 
-/node_modules/
+node_modules/
+
+megalinter-reports/
