@@ -15,7 +15,7 @@ def InitialiseBot():
 
 class Bot:
     def __init__(self):
-        print("Bot created")g
+        print("Bot created")
         self.bot = mineflayer.createBot({
             'host': os.getenv('IP'),
             'port': 25565,
@@ -31,12 +31,10 @@ class Bot:
         self.bot.quit()
         print('Bot disconnected')
     
- 
     #
     # @On('playerJoin')
     # def end(self, player):
     #     bot.chat(f"Someone joined! It's {player.username}")
     #
     # @On('playerLeft')
-    def chat_interface(self, user, message, *rest):
-        print(f'{user} said "{message}"')
+    

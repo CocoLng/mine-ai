@@ -39,11 +39,11 @@ while True:
         if post.message == "connect":
             print("Connection...")
             botAI = InitialiseBot()
-            
+        
         if post.message == "stop" and botAI != []:
             print("Stopping...")
             botAI.disconnect()
-            
+        
         if post.message == "kill":
             print("Killing...")
             exit()
@@ -51,7 +51,7 @@ while True:
             print("No bot connected")
         else:
             pass
-            #botAI.chat('pas compris')
+            # botAI.chat('pas compris')
 
 # The project is divided in 3 parts :
 # 1. How to get the data from the game
